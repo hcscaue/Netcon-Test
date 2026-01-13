@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
@@ -26,5 +25,4 @@
     <ProjectReference Include="..\NetconTest.Application\NetconTest.Application.csproj" />
     <ProjectReference Include="..\NetconTest.Api\NetconTest.Api.csproj" />
   </ItemGroup>
-
 </Project>
