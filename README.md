@@ -31,8 +31,12 @@ docker run -d -p 8080:8080 --name netcon-api netcon-api
 
 4. **Acesse a API:**
 
-   - Swagger UI: `http://localhost:8080/swagger`
-   - API Base: `http://localhost:8080`
+```bash
+Observação: No campo de autenticação do Swagger, informe apenas o token JWT, sem o prefixo Bearer.
+```
+
+- Swagger UI: `http://localhost:8080/swagger`
+- API Base: `http://localhost:8080`
 
 5. **Parar o container:**
 
