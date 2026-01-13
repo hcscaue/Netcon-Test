@@ -28,10 +28,10 @@ namespace NetconTest.Api.Controllers
             var requestId = Guid.NewGuid().ToString();
             if (Response != null)
             {
-                Response.Headers.Add("X-Request-Id", requestId);
-                Response.Headers.Add("Cache-Control", "no-store");
+                Response.Headers.Append("X-Request-Id", requestId);
+                Response.Headers.Append("Cache-Control", "no-store");
             }
-            
+
             if (!latitude.HasValue)
                 return BadRequest(CreateError("empty field", "latitude is mandatory"));
 

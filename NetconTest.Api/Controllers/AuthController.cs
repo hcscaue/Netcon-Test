@@ -19,7 +19,6 @@ namespace NetconTest.Api.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
         [SwaggerRequestExample(typeof(LoginRequest), typeof(LoginRequestExample))]
         public IActionResult Login([FromBody] LoginRequest request)
         {
